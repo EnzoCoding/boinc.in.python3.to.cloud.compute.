@@ -11,16 +11,14 @@ from os import environ
 account_key = (os.environ.get('ACCOUNT_KEY'))
 
 try:
-    call(['sudo', 'apt', 'install', 'boinc', '-y'],
-         stdout=open(os.devnull,'wb'), stderr=STDOUT)
+    subprocess.run(['apt install boinc -y'])
     time.sleep(360)
 except:
     print('errors')
     pass
 
 try:
-    call(['boinc', '--allow_multiple_clients', '--abort_jobs_on_exit', '--attach_project', 'www.worldcommunitygrid.org', 'ACCOUNT_KEY'],
-         stdout=open(os.devnull,'wb'), stderr=STDOUT)
+    subprocess.run(['boinc', '--allow_multiple_clients --abort_jobs_on_exit --attach_project www.worldcommunitygrid.org (ACCOUNT_KEY)'])
 except:
     print('errorsagain')
     pass
