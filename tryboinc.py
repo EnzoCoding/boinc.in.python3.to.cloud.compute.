@@ -19,7 +19,7 @@ except:
     pass
 
 try:
-    call(['boinc', '--abort_jobs_on_exit', '--attach_project', 'www.worldcommunitygrid.org', 'ACCOUNT_KEY'],
+    call(['boinc', '--allow_multiple_clients', '--abort_jobs_on_exit', '--attach_project', 'www.worldcommunitygrid.org', 'ACCOUNT_KEY'],
          stdout=open(os.devnull,'wb'), stderr=STDOUT)
 except:
     print('errorsagain')
