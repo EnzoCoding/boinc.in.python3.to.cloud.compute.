@@ -1,1 +1,1 @@
-python3 tryboinc.py
+tryboinc.py
