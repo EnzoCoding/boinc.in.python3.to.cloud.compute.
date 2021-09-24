@@ -1,1 +1,1 @@
-tryboinc.py
+worker: tryboinc.py
