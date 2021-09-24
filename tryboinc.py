@@ -11,7 +11,7 @@ from os import environ
 account_key = (os.environ.get('ACCOUNT_KEY'))
 
 try:
-    subprocess.run(['apt install boinc -y'])
+    subprocess.run(['sudo', 'apt install boinc -y'])
     time.sleep(360)
 except:
     print('errors')
