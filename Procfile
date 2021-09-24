@@ -1,1 +1,1 @@
-worker: tryboinc.py
+worker: python3 tryboinc.py
